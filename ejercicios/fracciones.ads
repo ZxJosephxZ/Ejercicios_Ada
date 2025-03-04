@@ -19,7 +19,7 @@ package fracciones is
 
    function MCD(A, B: Integer) return Integer;
    function Simplificar(F: fraccion_t) return fraccion_t ;
-   private
+private
    type fraccion_t is record
    Num: Integer;
    Den: Positive;
