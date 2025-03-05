@@ -52,6 +52,7 @@ Escribir(A/P);
 P:=A/P;
 P:=1/1;
 for I in 1..10 loop
+Escribir (P*B); --Comprobar las operaciones
 P:=P*B;
 end loop;
 if P/= 1/1024 then raise Practica_no_Apta; end if;
