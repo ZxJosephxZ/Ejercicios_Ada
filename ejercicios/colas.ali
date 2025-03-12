@@ -1,0 +1,108 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+
+U colas%b		colas.adb		f2d74e4b NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.unchecked_deallocation%s
+
+U colas%s		colas.ads		2da0c495 BN EE NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20240521074738 76789da1 ada%s
+D a-except.ads		20240521074738 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20240521074738 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240521074738 119b8fb3 ada.streams%s
+D a-string.ads		20240521074738 90ac6797 ada.strings%s
+D a-sttebu.ads		20240521074738 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240521074738 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240521074738 9eaa38c6 ada.tags%s
+D a-textio.ads		20240521074738 5c2c6153 ada.text_io%s
+D a-unccon.ads		20240521074738 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20240521074738 c3a8ac65 ada.unchecked_deallocation%s
+D colas.ads		20250312193407 2da0c495 colas%s
+D colas.adb		20250312194829 40f347e8 colas%b
+D interfac.ads		20240521074738 15f799c2 interfaces%s
+D i-cstrea.ads		20240521074738 e53d8b8e interfaces.c_streams%s
+D system.ads		20240521074738 426dafb8 system%s
+D s-crtl.ads		20240521074738 8a0692f8 system.crtl%s
+D s-exctab.ads		20240521074738 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240521074738 dc5161d4 system.file_control_block%s
+D s-parame.ads		20240904144414 1f39ba92 system.parameters%s
+D s-putima.ads		20240521074738 17291fe4 system.put_images%s
+D s-secsta.ads		20240521074738 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240521074738 df77073e system.soft_links%s
+D s-stache.ads		20240521074738 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240521074738 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240521074738 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240521074738 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20240521074738 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240521074738 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240521074738 d9032363 system.wch_con%s
+G a e
+G c Z s b [colas standard 4 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 2r6 5r31 51r10
+X 9 a-textio.ads
+58K13*Text_IO 787e16 13|1w10 51r14
+566U14*Put_Line 13|51s22
+X 11 a-uncdea.ads
+20u15*Unchecked_Deallocation 13|2w10 5r35
+X 12 colas.ads
+2+10 elemento_t 3r41 7r34 8r39 22r14 13|20r34 33r39 62r23
+3V19 ToString{string} 3>28 13|51s31
+3*28 el_Elemento{2+10}
+4k9*Colas 2z10 3z19 19E9 29l5 29e10 13|3b14 102l5 102t10
+5R9*cola_t 7r65 8r70 10r34 11r34 12r36 14r31 14r54 15r39 25c9 28e14 13|8r34
+. 14r34 20r65 33r70 47r36 57r30 57r54 75r40 91r39
+7U14*Poner 7>21 7=46 13|20b14 30l8 30t13 69s10
+7*21 el_Elemento{2+10} 13|20b21 21r50
+7r46 en_la_Cola{5R9} 13|20b46 23r21 24m10 25m10 27m10 27r10 28m10
+8U14*Quitar 8<22 8=51 13|33b14 44l8 44t14 64s13
+8*22 un_Elemento{2+10} 13|33b22 39m10
+8r51 de_la_Cola{5R9} 13|33b51 36r21 39r25 40r29 41m10 41r36
+10V13*Esta_Vacia{boolean} 10>25 13|8b13 11l8 11t18 23s10 36s10 60s17
+10r25 La_Cola{5R9} 13|8b25 10r14
+11V13*Esta_Llena{boolean} 11>25 13|14b13 17l8 17t18
+11r25 La_Cola{5R9} 13|14b25
+12U14*MostrarCola 12>27 13|47b14 54l8 54t19
+12r27 La_Cola{5R9} 13|47b27 48r24
+14U14*Copiar 14>23 14=39 13|57b14 72l8 72t14
+14r23 Origen{5R9} 13|57b22 58r24
+14r39 Destino{5R9} 13|57b38 60r28 64m30 69m27
+15V14*"="{boolean} 15>17 15>26 13|75b14 88l9 88t11
+15r17 La_Cola{5R9} 13|75b18 76r25
+15r26 Con_La_Cola{5R9} 13|75b27 77r25
+19R9 Nodo 20r28 21c9 24e14 13|5r58 21r35
+20P9 ref_Nodo(19R9) 23r22 26r21 27r20 13|5r64 21r19 34r24 48r12 58r12 76r13
+. 77r13 92r12
+22*7 Datos{2+10} 13|21m41 39r48 51r44 69r20 80r18 80r32
+23p7 ptr_Siguiente{20P9} 13|21m63 27m32 41r59 52r21 70r21 83r23 84r23 96r53
+26p7 ptr_primero{20P9} 13|10r22 24m21 39r36 40r40 41m21 41r47 48r32 58r31
+. 76r33 77r37 94r21 95r25 96m18 96r41
+27p7 ptr_ultimo{20P9} 13|25m21 27r21 28m21 99m15
+X 13 colas.adb
+5U14 Free_Node[11|20] 42s10 97s10
+21p7 Nuevo_Nodo{12|20P9} 24r36 25r35 27r49 28r35
+34p7 Nodo_A_Eliminar{12|20P9} 40m10 42m20 42r20
+48p7 Aux{12|20P9} 50r13 51r40 52m10 52r17
+58p7 Aux{12|20P9} 68r13 69r16 70m10 70r17
+62*13 Elemento{12|2+10} 64m20
+76p7 Aux1{12|20P9} 79r14 80r13 83m10 83r18 87r14
+77p7 Aux2{12|20P9} 79r31 80r27 84m10 84r18 87r30
+91U14 Liberar 91b14 91=23 100l8 100t15
+91r23 La_Cola{12|5R9} 94r13 95r17 96m10 96r33 99m7
+92p7 Aux{12|20P9} 95m10 97m20 97r20
+
