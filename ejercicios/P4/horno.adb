@@ -11,7 +11,7 @@ package body Horno is
    package Retardador_de_Potencias is new
                    Retardadores (Retardo => L,
                                Elementos => Potencias,
-                                  Tamaño => Positive(L/Ts));
+                                  Tamano => Positive(L/Ts));
 
 
    Ct: constant := 1_500.0;   -- J/�C Capacidad termica
